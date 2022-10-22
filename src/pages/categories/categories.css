@@ -1,0 +1,9 @@
+.categories {
+  padding: 6vh 8vw 0;
+  display: grid;
+  grid-template-columns: repeat(4, 21vw);
+}
+
+.categories .leader {
+  width: 80%;
+}

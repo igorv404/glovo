@@ -1,0 +1,34 @@
+.product {
+  width: 20vw;
+  height: 45vh;
+  border-radius: 3vw;
+  overflow: hidden;
+  background-color: var(--second-color);
+  color: var(--second-text-clor);
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  height: 55%;
+}
+
+.product h2 {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  margin-left: 5%;
+}
+
+.bottomOfProduct {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomOfProduct button {
+  background-color: var(--main-color);
+  width: 30%;
+  height: 5vh;
+  border-radius: 1vw;
+  cursor: pointer;
+}

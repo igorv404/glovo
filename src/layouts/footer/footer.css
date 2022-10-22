@@ -1,0 +1,23 @@
+footer {
+  height: 25vh;
+  background-color: var(--main-text-color);
+  padding: 0 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.downloadLinksWhite {
+  width: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.downloadLinksWhite img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.downloadLinksWhite img:first-child {
+  margin-bottom: 2vh;
+}

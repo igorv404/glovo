@@ -1,0 +1,33 @@
+.catalog {
+  display: flex;
+}
+
+.catalog aside {
+  width: 25vw;
+  height: 100vh;
+  background-color: var(--main-color);
+  padding: 4vh 3vw;
+}
+
+.searchArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchArea input {
+  width: 100%;
+  height: 5vh;
+  border-radius: 2vw;
+  padding-left: 1vw;
+}
+
+.catalog aside h2 {
+  margin: 3vh 0 1vh;
+}
+
+.products {
+  width: 75vw;
+  padding: 4vh 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,21 @@
+.leader {
+  width: 18vw;
+  margin-bottom: 6vh;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leader img {
+  width: 100%;
+  border-radius: 7vw 5vw 3vw 10vw;
+}
+
+.leader span {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  padding: 1.5vh 2vw;
+  background-color: var(--main-color);
+  border-radius: 1vw;
+  color: var(--main-text-color);
+}

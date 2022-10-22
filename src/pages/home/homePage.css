@@ -1,0 +1,159 @@
+/** introduction **/
+
+.introduction {
+  height: 83vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  font-size: 5vw;
+}
+
+.introduction div p {
+  font-family: "Gotham-Light", Arial, sans-serif, serif;
+  font-size: 1.5vw;
+  margin: 3vh 0;
+}
+
+.introduction div button {
+  width: 14vw;
+  height: 8vh;
+}
+
+/** top rating **/
+
+.topRating {
+  padding: 8vh 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topRating h2 {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  font-size: 3.5vw;
+}
+
+.listOfLeaders {
+  width: 80%;
+  padding: 8vh 0 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/** quick info **/
+
+.quickInfo {
+  padding: 0 8vw 8vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quickInfo h2 {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  font-size: 3.5vw;
+}
+
+.infoList {
+  display: flex;
+  justify-content: space-between;
+  margin: 8vh 0;
+}
+
+.info {
+  width: 30%;
+  text-align: center;
+}
+
+.info img {
+  height: 45vh;
+}
+
+.info h3 {
+  font-family: "Gotham-Bold", Arial, sans-serif, serif;
+  margin: 3vh 0 1vh;
+}
+
+.info p {
+  font-family: "Gotham-Light", Arial, sans-serif, serif;
+}
+
+.info mark {
+  background-color: var(--main-color);
+  border-radius: 1vw;
+}
+
+.quickInfo button {
+  width: 25vw;
+}
+
+.quickInfo button:hover {
+  color: var(--second-color);
+}
+
+/** download **/
+
+.download {
+  height: 65vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.downloadInfo {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadInfo > img {
+  height: 25vh;
+}
+
+.downloadInfo h2 {
+  font-size: 3.5vw;
+  margin: 3vh;
+}
+
+.downloadInfo p {
+  font-family: "Gotham-Light", Arial, sans-serif, serif;
+  margin-bottom: 6vh;
+}
+
+.downloadLinks {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.downloadLinks img {
+  width: 45%;
+  cursor: pointer;
+}
+
+.download > img {
+  width: 45%;
+  position: absolute;
+  right: 0;
+}
