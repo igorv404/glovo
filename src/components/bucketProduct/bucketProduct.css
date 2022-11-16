@@ -1,0 +1,44 @@
+.bucketProduct {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+
+.bucketProductLeft {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bucketProductLeft img {
+  width: 45%;
+  height: 100%;
+}
+
+.bucketProductRight {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countSwitchers {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countSwitchers button {
+  width: 2vw;
+  height: 4.5vh;
+  border-radius: 50%;
+  font-weight: bolder;
+}
+
+.bin {
+  cursor: pointer;
+}

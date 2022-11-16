@@ -1,26 +1,17 @@
 import React from 'react';
 import './header.css';
-import ButtonCyan from './../../components/buttonCyan/ButtonCyan';
 import Logotype from './../../components/logotype/Logotype';
 import logo from './../../assets/images/logotypes/logo.svg';
-import user from './../../assets/images/icons/user.svg';
 import bucket from './../../assets/images/icons/bucket.svg';
-
-function IsLog() {
-  return localStorage.getItem('user')
-    ? (<div className="userLinks">
-        <img src={user} className="user" alt="user"/>
-        <img src={bucket} className="bucket" alt="bucket"/>
-    </div>
-      )
-    : ButtonCyan({text: "Get started", link: "/categories"});
-}
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <Logotype image={logo}/>
-      <IsLog/>
+      <Link to={"/bucket"}>
+        <img src={bucket} className="bucketIcn" alt="bucket"/>
+      </Link>
     </header>
   )
 }

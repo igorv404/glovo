@@ -7,19 +7,7 @@ header {
   justify-content: space-between;
 }
 
-.userLinks {
-  width: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.user {
-  width: 35%;
-  cursor: pointer;
-}
-
-.bucket {
-  width: 35%;
+.bucketIcn {
+  width: 3vw;
   cursor: pointer;
 }

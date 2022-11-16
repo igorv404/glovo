@@ -1,0 +1,29 @@
+.bucket {
+  padding: 5vh 8vw 0;
+}
+
+.emptyArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 64vh;
+}
+
+.itemsArea {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 64vh;
+}
+
+.orderAmountArea {
+  height: 15vh;
+  border-top: 0.3vh solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.itemsArea h2 {
+  text-align: center;
+}

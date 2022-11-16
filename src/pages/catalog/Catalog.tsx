@@ -15,7 +15,7 @@ function Catalog() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 1000);
 
   const sortByName = (arr: Array<IProduct>) => {
     return arr.sort((a: IProduct, b: IProduct) => {
@@ -73,27 +73,28 @@ function Catalog() {
         loading ?
           <Loader/>
           :
-        <main className="catalog">
-          <aside>
-            <div className="searchArea">
-              <input type="text" id="search" placeholder="Search" onChange={(event) => setRequest(event.target.value)}/>
+          <main className="catalog">
+            <aside>
+              <div className="searchArea">
+                <input type="text" id="search" placeholder="Search"
+                       onChange={(event) => setRequest(event.target.value)}/>
+              </div>
+              <h2>Sort by:</h2>
+              <div className="sortCat">
+                <input type="checkbox" id="name" checked={isCheckedName} onChange={() => sorting(true)}/>
+                <label htmlFor="name">name</label>
+              </div>
+              <div className="sortCat">
+                <input type="checkbox" id="price" checked={isCheckedPrice} onChange={() => sorting(false)}/>
+                <label htmlFor="price">price</label>
+              </div>
+            </aside>
+            <div className="products">
+              {search.map((product: IProduct, id: number) => (
+                <Product image={product.image} name={product.name} price={product.price} id={product.id} key={id}
+                         categoryName={product.categoryName}/>))}
             </div>
-            <h2>Sort by:</h2>
-            <div className="sortCat">
-              <input type="checkbox" id="name" checked={isCheckedName} onChange={() => sorting(true)}/>
-              <label htmlFor="name">name</label>
-            </div>
-            <div className="sortCat">
-              <input type="checkbox" id="price" checked={isCheckedPrice} onChange={() => sorting(false)}/>
-              <label htmlFor="price">price</label>
-            </div>
-          </aside>
-          <div className="products">
-            {search.map((product: IProduct, id: number) => (
-              <Product image={product.image} name={product.name} price={product.price} id={product.id} key={id}
-                       categoryName={product.categoryName}/>))}
-          </div>
-        </main>
+          </main>
       }
     </>
   )

@@ -9,6 +9,7 @@ import Categories from './pages/categories/Categories';
 import Catalog from './pages/catalog/Catalog';
 import ProductPage from './pages/productPage/ProductPage';
 import Footer from './layouts/footer/Footer';
+import Bucket from "./pages/bucket/Bucket";
 
 function App() {
   AOS.init({duration: 1000});
@@ -20,6 +21,7 @@ function App() {
         <Route path="/categories" element={<Categories/>}/>
         <Route path="/catalog/:store" element={<Catalog/>}/>
         <Route path="/product/:id" element={<ProductPage/>}/>
+        <Route path="/bucket" element={<Bucket/>}/>
       </Routes>
       <Footer/>
     </Router>

@@ -10,7 +10,7 @@ function Categories() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 1000);
   useEffect(() => {
     axios.get("http://localhost:8080/categories").then(res => setCategories(res.data));
   }, []);
